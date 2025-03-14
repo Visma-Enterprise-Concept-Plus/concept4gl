@@ -1,0 +1,46 @@
+{
+	"scopeName": "source.concept",
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Concept",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#fields"
+		},
+		{
+			"include": "#system"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"name": "keyword.control.uni",
+			"match": "\\b(if|elseif|else|endif|while|scroll|endscroll|loop|endloop|return|field|table|endon|on \\@([a-zA-Z])+)\\b"
+		},
+		"comments": {
+			"name": "comment.line.uni",
+			"match": "(\\*(.+?)$|\\*)"
+		},
+		"strings": {
+			"name": "string.quoted.single.uni",
+			"begin": "'",
+			"end": "'"
+		},
+		"fields": {
+			"name": "field.quoted.double.uni",
+			"begin": "\"",
+			"end": "\""
+		},
+		"system": {
+			"name": "system.operation.uni",
+			"match": "\\$([a-zA-Z_-])+"
+		}
+	}
+}
