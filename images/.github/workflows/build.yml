@@ -1,0 +1,29 @@
+name: "Build and publish Concept VS Code extension"
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check-out
+        id: checkout
+        uses: actions/checkout@v4
+
+      - name: Login
+        id: login
+        run: |
+          echo ${{ secrets.TOKEN }} || vsce login ${{ secrets.PUBLISHER }}
+
+      - name: Package
+        id: package
+        run: |
+          npm install
+          vsce package
+
+      - name: Publish
+        id: publish
+        run: |
+          vsce publish
+
+          

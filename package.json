@@ -2,12 +2,13 @@
   "name": "uq-concept",
   "displayName": "Unique Concept Language support",
   "description": "Concept language is a general purpose 4GL developed by Unique AS (Visma) since 1986.",
+  "icon": "images/concept_logo_128.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/vs-dsva/concept4gl.git"
   },
   "publisher": "concept4gl",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.97.0"
   },
