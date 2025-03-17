@@ -8,7 +8,7 @@
     "url": "https://github.com/vs-dsva/concept4gl.git"
   },
   "publisher": "concept4gl",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.97.0"
   },
@@ -19,7 +19,7 @@
     "languages": [{
       "id": "concept",
       "aliases": ["Unique Concept", "concept"],
-      "extensions": [".uni",".ucp"],
+      "extensions": [".uni",".inc",".unf",".imp"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
